@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
       session[:name] = nil
       redirect_to root_path
     else
-      session[:name].delete
+      session[:name]
     end
   end
 end
