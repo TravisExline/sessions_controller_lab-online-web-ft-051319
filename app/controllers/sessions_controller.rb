@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
   def destroy
     if session[:name].present?
       session[:name] = nil
+      redirect_to root_path
     else
       session[:name]
     end
